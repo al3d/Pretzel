@@ -9,6 +9,7 @@ define('PRETZEL', dirname(__FILE__));
 require_once PRETZEL . '/Pretzel/Connection.php';
 require_once PRETZEL . '/Pretzel/Exception.php';
 require_once PRETZEL . '/Pretzel/Statement.php';
+require_once PRETZEL . '/Pretzel/Recordset.php';
 
 
 

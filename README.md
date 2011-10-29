@@ -1,4 +1,4 @@
-# Pretzel ![icon for the sake of it](https://github.com/al3d/Pretzel/blob/master/icon.png)
+# Pretzel ![icon for the sake of it](https://github.com/al3d/Pretzel/raw/master/icon.png)
 
 Pretzel is a very simple, crude and generally untested wrapper for PHP's PDO interface. Specifically MySQL at the moment.
 

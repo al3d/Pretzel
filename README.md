@@ -12,12 +12,12 @@ Make of it what you wish. The exceptions are probably incomplete, and the code b
 
 As far as I'm aware, it only needs PHP 5.2.something. It should work on 5.3, but I've not really tested it. I do a lot of work for clients who have lazy (shared hosting) hosts who rarely and are afraid to update their software (presumably for fear of messing things up for lazy clients). This needs to work for them, too (plus I refuse to use the namespacing… love PHP, hate its namespace - fuck it).
 
-### Installation + Usge
+### Installation + Usage
 
 [Download](https://github.com/al3d/Pretzel/zipball/master) or `clone git git@github.com:al3d/Pretzel.git` the git repository and upload the `Pretzel.php` and `Pretzel/` directory somewhere on your server. From there you just need to `<?php require_once 'Pretzel.php` (that is, to wherever you've put the Pretzel.php and Pretzel/ directory) and you're up and running. That is apart from the configuration.
 
 The following is a simple example of how you might use Pretzel. Hopefully it's self explanatory. I will add comments to the files, tests and proper comments/documentation to this project someday… honest
-
+```php
 	<?php
 
 	require_once 'Pretzel.php'; // or wherever you've installed it.
@@ -123,7 +123,7 @@ The following is a simple example of how you might use Pretzel. Hopefully it's s
 		echo 'Oops! An error occurred: ' . $e->getMessage();
 		exit
 	}
-
+```
 
 ### A few notes
 

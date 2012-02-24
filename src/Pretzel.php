@@ -75,7 +75,8 @@ class Pretzel
 
     public function execute($sql)
     {
-        $statement = call_user_func_array(array($this, 'query'), func_get_args());
+    	$args = func_get_args();
+        $statement = call_user_func_array(array($this, 'query'), $args);
         return $statement->getAffectedRows();
     }
 

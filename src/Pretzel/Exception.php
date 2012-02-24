@@ -2,7 +2,7 @@
 
 
 
-define('PRETZEL_EXCEPTION', PRETZEL . '/Exception');
+define('PRETZEL_EXCEPTION', PRETZEL . '/Pretzel/Exception');
 
 
 

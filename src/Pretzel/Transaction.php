@@ -18,9 +18,12 @@ class Pretzel_Transaction
 
 
 
-    public function start()
+    public function start($auto_commit = false)
     {
         try {
+            if ($auto_commit === false) {
+                $this->_connection->get()->setAttribute(PDO::ATTR_AUTOCOMMIT, false);
+            }
             return $this->_connection->get()->beginTransaction();
         } catch (PDOException $e) {
             Pretzel_Exception::raise($e);
